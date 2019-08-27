@@ -1,0 +1,50 @@
+/* HEADER */
+@media (max-width: $desktopXS) {
+
+  .page-header__logo {
+    display: inline-block;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    line-height: 0;
+    background-color: #2d2d2d;
+  }
+}
+
+.page-header__wrap {
+  width: 100%;
+  position: fixed;
+  z-index: 8;
+}
+
+.page-header__logo {
+  display: inline-block;
+  line-height: 0;
+  background-color: #2d2d2d;
+}
+
+.page-header__logo picture {
+  font-size: 0;
+  line-height: 0;
+}
+
+.page-header__img {
+  display: block;
+  // margin: 0 auto;
+}
+
+@media (min-width: $desktopXS) {
+  .page-header__wrap {
+    border-bottom: 1px solid $color-gray;
+    margin-bottom: -1px;
+    background-color: #ffffff;
+  }
+
+  .page-header {
+    display: flex;
+  }
+
+  .page-header__logo {
+    width: auto;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,25 @@
+.social-block {
+  display: flex;
+  @include list-reset;
+  margin-right: -5px;
+}
+
+.social-block__link {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 19px 6px;
+  line-height: 0;
+  border: 1px solid $color-gray;
+}
+
+.social-block__icon {
+  fill: $color-text;
+}
+
+.social-block__link:hover {
+  border: 1px solid $color-accent;
+}
+
+.social-block__link:hover .social-block__icon {
+  fill: $color-accent;
+}

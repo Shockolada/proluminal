@@ -1,0 +1,83 @@
+.contacts-block__wrap {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $color-gray;
+  margin-bottom: 20px;
+}
+
+.contacts-block {
+  max-width: 400px;
+  @include list-reset;
+}
+
+.contacts-block li {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contacts-block__row {
+  width: 100%;
+  border: 1px solid $color-gray;
+}
+
+.contacts-block__link {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 24px;
+  color: $color-text;
+  text-decoration: none;
+  border-bottom: 1px solid $color-gray;
+}
+
+.contacts-block__link:last-child {
+  border-bottom: none;
+}
+
+.contacts-block__link--bold {
+  font-weight: 700;
+}
+
+.contacts-block__link:hover {
+  color: $color-accent;
+}
+
+.contacts-block__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  fill: $color-accent;
+  border: 1px solid $color-gray;
+  border-right: none;
+}
+
+.contacts-block__icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.contacts-block__icon--small svg {
+  width: 22px;
+  height: 22px;
+}
+
+
+@media (min-width: $tablet) {
+  .contacts-block__wrap {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .contacts-block__link {
+    padding: 10px 30px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .contacts-block__wrap {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+}

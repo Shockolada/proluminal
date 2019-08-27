@@ -1,0 +1,136 @@
+.one-project {
+  // padding-bottom: 30px;
+  // border-bottom: 1px solid $color-gray;
+}
+
+.one-project__top {
+  margin-bottom: 20px;
+}
+
+.one-project__main-image {
+  position: relative;
+}
+
+.one-project__main-image img {
+  display: block;
+
+}
+
+.one-project__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 100;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: -80px;
+    left: 0;
+
+    width: 30px;
+    height: 70px;
+    background-color: $color-accent;
+  }
+}
+
+.one-project__info {
+  margin: 0;
+  font-weight: 300;
+}
+
+.one-project__info span {
+  color: $color-accent;
+}
+
+.one-project__about-project {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-top: 90px;
+  outline: 1px solid #e6e6e6;
+}
+
+.one-project__description {
+  margin-bottom: 10px;
+}
+
+.one-project__description p{
+  margin: 0;
+  margin-bottom: 10px;
+  color: $color-text-light;
+}
+
+.one-project__consultation {
+  left: 0;
+  bottom: 0;
+}
+
+@media (min-width: $mobileL) and (max-width: $tablet) {
+  .one-project__main-image img {
+    width: 100%;
+    height: 405px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: $tablet) {
+
+  .one-project {
+    // padding-bottom: 50px;
+    // border-bottom: 1px solid $color-gray;
+  }
+
+  .one-project__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .one-project__main-image {
+    width: calc(50% - 10px);
+  }
+
+  .one-project__about-project {
+    width: calc(50% - 10px);
+    padding: 30px;
+    justify-content: center;
+  }
+
+}
+
+@media (min-width: $desktopXS) {
+  .one-project__top {
+    margin-bottom: 30px;
+  }
+
+  .one-project__description {
+    margin-bottom: 30px;
+  }
+
+  .one-project__about-project {
+    padding: 30px 70px;
+  }
+
+  .one-project__title {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 25px;
+
+    &::after {
+      top: -100px
+    }
+  }
+
+  .one-project__info {
+    font-size: 18px;
+  }
+
+  .one-project__consultation {
+    left: 20px;
+    bottom: 20px;
+  }
+}

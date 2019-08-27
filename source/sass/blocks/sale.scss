@@ -1,0 +1,15 @@
+.sale {
+  position: absolute;
+  display: inline-block;
+  padding: 5px 14px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet) {
+  .sale {
+
+  }
+}

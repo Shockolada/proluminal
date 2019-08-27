@@ -1,0 +1,42 @@
+.parthners__list {
+  display: flex;
+  min-width: 1070px;
+  @include list-reset;
+  // margin-right: -10px;
+  font-size: 0;
+}
+
+.parthners__list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 250px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid $color-gray;
+}
+
+.parthners__list li img {
+  width: 71%;
+}
+
+
+@media (max-width: $desktopXS - 1px) {
+  .parthners__list li:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .parthners__list {
+    flex-wrap: wrap;
+    width: calc(100% + 30px);
+    margin-right: -30px;
+  }
+
+  .parthners__list li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}

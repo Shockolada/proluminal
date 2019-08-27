@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+@@include('./blocks/head.html')
+
+<body>
+  @@include('./blocks/header.html')
+
+  <!-- Main Content
+================================================== -->
+  <main class="page-content container">
+
+    <section class="one-project section">
+
+      <h1 class="page-title page-title--inner">Bedroom white gold</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html" class="breadcrumbs__link">Home</a></li>
+        <li><a href="projects.html" class="breadcrumbs__link">Proiectele noastre</a></li>
+        <li><a class="breadcrumbs__link breadcrumbs__link--active">Bedroom white gold</a></li>
+      </ul>
+
+      <div class="one-project__top">
+        <div class="one-project__main-image">
+          <img src="img/one-project/one-proj-main.jpg" alt="">
+          <a href="#" class="consultation-link one-project__consultation">
+            <span class="consultation-link__hover"></span>
+            Solicota consultație gratuita
+            <svg class="consultation-link__arrow" width="12" height="21">
+              <use xlink:href="img/sprites/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+
+        </div>
+
+        <div class="one-project__about-project">
+          <p class="one-project__title">Proiect creat cu delicatețe și atenție unică în felul său</p>
+          <p class="one-project__info">Cread cu drag pentru: <span>999.md</span></p>
+        </div>
+      </div>
+
+      <div class="one-project__description">
+        <p>
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+          "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
+          коллекцию
+          размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
+          без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+          послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы
+          электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+        </p>
+      </div>
+
+      <div class="one-project__galery galery">
+        <div class="galery__img"><img src="img/one-project/one-proj-1.jpg" alt=""></div>
+        <div class="galery__img"><img src="img/one-project/one-proj-2.jpg" alt=""></div>
+        <div class="galery__img"><img src="img/one-project/one-proj-3.jpg" alt=""></div>
+        <div class="galery__img"><img src="img/one-project/one-proj-4.jpg" alt=""></div>
+        <div class="galery__img"><img src="img/one-project/one-proj-5.jpg" alt=""></div>
+        <div class="galery__img"><img src="img/one-project/one-proj-6.jpg" alt=""></div>
+        <div class="galery__img"><img src="img/one-project/one-proj-7.jpg" alt=""></div>
+        <div class="galery__img"><img src="img/one-project/one-proj-8.jpg" alt=""></div>
+        <div class="galery__img"><img src="img/one-project/one-proj-9.jpg" alt=""></div>
+        <div class="galery__img"><img src="img/one-project/one-proj-10.jpg" alt=""></div>
+        <div class="galery__img"><img src="img/one-project/one-proj-11.jpg" alt=""></div>
+      </div>
+
+    </section>
+
+
+
+
+    <!-- Projects
+  ================================================== -->
+    <section class="projects projects--inner section">
+      <h2 class="title title--inner">Proiecte similare</h2>
+      @@include('./blocks/projects.html')
+
+    </section> <!-- Projects Section End-->
+
+  </main> <!-- Main Content End-->
+
+  @@include('./blocks/footer.html')
+
+  @@include('./blocks/scripts.html')
+
+</body>
+
+</html>

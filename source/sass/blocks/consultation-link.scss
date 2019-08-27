@@ -1,0 +1,60 @@
+.consultation-link {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  width: 180px;
+  color: #ffffff;
+  text-decoration: none;
+  background: transparent;
+
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  &::after {
+    left: 0;
+    width: 20%;
+    background-color: #000000;
+    opacity: 0.4;
+    transition: 0.2s linear;
+  }
+
+  &::before {
+    right: 0;
+    width: 80%;
+    background-color: $color-accent;
+    opacity: 0.8;
+  }
+}
+
+.consultation-link__arrow {
+  width: 21px;
+  height: 21px;
+  fill: #ffffff;
+}
+
+.consultation-link__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #000000;
+  opacity: 0.4;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.2s linear;
+}
+
+.consultation-link:hover .consultation-link__hover {
+  transform: scaleX(1);
+}

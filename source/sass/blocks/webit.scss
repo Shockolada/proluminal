@@ -1,0 +1,15 @@
+.webit {
+  display: inline-block;
+  width: 48px;
+  height: 12px;
+
+  background-image: url("../img/logo-webit.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  transition: background-position 0.3s linear;
+}
+
+.webit:hover {
+  background-position: top center;
+}

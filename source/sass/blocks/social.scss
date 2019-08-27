@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+  @include list-reset;
+  margin-right: -5px;
+  padding: 0 15px;
+}
+
+.social__link {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 19px 6px;
+  line-height: 0;
+  border: 1px solid #535353;
+}
+
+.social__icon {
+  fill: #a2a2a2;
+}
+
+.social__link:hover {
+  border: 1px solid $color-accent;
+}
+
+.social__link:hover .social__icon {
+  fill: $color-accent;
+}
+
+@media (min-width: $tablet) {
+  .social {
+    padding: 0;
+  }
+}

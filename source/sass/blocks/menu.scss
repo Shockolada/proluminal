@@ -1,0 +1,141 @@
+@media (max-width: $desktopXS - 1px) {
+  .menu {
+    z-index: 10;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    padding: 30px 10px;
+    background-color: #ffffff;
+    display: none;
+  }
+
+  .menu__top {
+    display: flex;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+  }
+
+  .menu__langs {
+    margin-bottom: 55px;
+  }
+
+  .menu__list {
+    text-align: center;
+  }
+
+  .menu__list li:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+
+.menu__list {
+  @include list-reset;
+}
+
+.menu__link {
+  font-size: 17px;
+  font-weight: 100;
+  color: $color-text;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.menu__link--active {
+  color: $color-accent;
+}
+
+
+.languages__link--active {
+  color: $color-accent;
+}
+
+
+@media (min-width: $desktopXS) {
+  .menu {
+    min-height: calc(100% + 1px);
+    display: flex;
+    flex-grow: 1;
+    // border-bottom: 1px solid #fff;
+  }
+
+  .menu__top {
+    height: 106px;
+  }
+
+  .menu__nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+  }
+
+  .menu__list {
+    display: flex;
+  }
+
+  .menu__list li {
+    display: flex;
+  }
+
+  .menu__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+  }
+
+  .menu__link:hover,
+  .menu__link:focus {
+    box-shadow: 0 1px 0 0 #fff;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: calc(100% + 1px);
+      background-color: $color-gray;
+    }
+
+    &::before {
+      left: 0px;
+    }
+
+    &::after {
+      right: -1px;
+    }
+  }
+
+  .menu__link--active {
+    box-shadow: 0 1px 0 0 #fff;
+
+    box-shadow: 0 1px 0 0 #fff;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: calc(100% + 1px);
+      background-color: $color-gray;
+    }
+
+    &::before {
+      left: 0px;
+    }
+
+    &::after {
+      right: -1px;
+    }
+  }
+
+  .menu__langs {
+    order: 1;
+  }
+}

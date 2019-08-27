@@ -1,0 +1,10 @@
+.intro {
+  position: relative;
+}
+
+
+@media (min-width: $desktopXS) {
+  .intro {
+    margin-bottom: 70px;
+  }
+}

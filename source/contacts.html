@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+@@include('./blocks/head.html')
+
+<body>
+  @@include('./blocks/header.html')
+
+  <!-- Main Content
+================================================== -->
+  <main class="page-content container">
+
+    <h1 class="page-title">Contacte</h1>
+    <ul class="breadcrumbs">
+      <li><a href="" class="breadcrumbs__link">Home</a></li>
+      <li><a class="breadcrumbs__link breadcrumbs__link--active">Contacte</a></li>
+    </ul>
+
+
+    <div class="contacts-block__wrap">
+      <ul class="contacts-block">
+        <li>
+          <span class="contacts-block__icon">
+            <svg width="30" height="30">
+              <use xlink:href="img/sprites/sprite.svg#email"></use>
+            </svg>
+          </span>
+          <div class="contacts-block__row">
+            <a class="contacts-block__link" href="mailto:proluminal@yahoo.co">proluminal@yahoo.co</a><br>
+            <a class="contacts-block__link" href="mailto:luminitagoncear@gmail.com">luminitagoncear@gmail.com</a>
+          </div>
+        </li>
+        <li>
+          <span class="contacts-block__icon contacts-block__icon--small">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprites/sprite.svg#phone"></use>
+            </svg>
+          </span>
+          <div class="contacts-block__row">
+            <a class="contacts-block__link contacts-block__link--bold" href="tel:+37367309907">+373 (67) 309 907</a>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="social-block">
+        <li><a class="social-block__link" href="">
+            <svg class="social-block__icon" width="16" height="16">
+              <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+            </svg>
+          </a></li>
+        <li><a class="social-block__link" href="">
+            <svg class="social-block__icon" width="16" height="16">
+              <use xlink:href="img/sprites/sprite.svg#fb"></use>
+            </svg>
+          </a></li>
+      </ul>
+
+    </div>
+
+    <section class="contact-form form">
+      <h2 class="form__title">Scrie-ne</h2>
+      <form action="">
+        <div class="contact-form__wrap">
+          <div class="contact-form__left">
+              <input class="form__item" type="text" placeholder="Nume">
+              <input class="form__item" type="email" placeholder="E-mail">
+              <input class="form__item" type="tel" placeholder="Telefon">
+          </div>
+
+          <textarea class="form__item contact-form__right" name="" id="" cols="30" rows="5" placeholder="Mesajul"></textarea>
+        </div>
+
+        <button class="button form__btn" type="submit">Trimite
+          <svg class="button__arrow" width="12" height="21">
+            <use xlink:href="img/sprites/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </section>
+
+  </main> <!-- Main Content End-->
+
+  @@include('./blocks/footer.html')
+
+  @@include('./blocks/scripts.html')
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+// // TEMPORALLY FOR PIXEL PERFECT
+
+// html {
+//   position: relative;
+
+//   &::after {
+//     content: "";
+
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     z-index: -100;
+//     transform: translateX(-50%);
+
+//     display: block;
+//     width: 320px;
+//     min-height: 3000px;
+//     opacity: 0.5;
+
+//     background: url("../temp/320.jpg") no-repeat top center;
+//     background-size: 320px;
+//   }
+// }
+
+// @media(min-width: $desktop) {
+
+//   html {
+
+//     &::after {
+//       width: 1170px;
+//       background-image: url("../temp/project.jpg");
+//       background-size: 1920px;
+//     }
+//   }
+// }

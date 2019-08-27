@@ -1,0 +1,76 @@
+.languages {
+  display: flex;
+  justify-content: center;
+  @include list-reset;
+  margin-right: -20px;
+}
+
+.languages li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.languages__link {
+  position: relative;
+  font-size: 17px;
+  font-weight: 100;
+  color: $color-text;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.languages__link:hover,
+.languages__link--active {
+  color: $color-accent;
+}
+
+
+@media (min-width: $desktopXS) {
+  .languages {
+    margin-right: -10px;
+  }
+
+  .languages li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .languages__link {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    padding: 0 10px;
+  }
+
+  .languages__link:hover,
+  .languages__link--active {
+    color: $color-accent;
+    box-shadow: 0 1px 0 0 #fff;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: calc(100% + 1px);
+      background-color: $color-gray;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: -1px;
+    }
+  }
+
+
+}

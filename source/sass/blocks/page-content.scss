@@ -1,0 +1,15 @@
+.page-content {
+  padding-top: 70px;
+}
+
+@media (min-width: $tablet) {
+  .page-content {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .page-content {
+    padding-top: 116px;
+  }
+}

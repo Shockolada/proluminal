@@ -1,0 +1,41 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 7px 30px;
+  border: none;
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: $color-accent;
+  cursor: pointer;
+
+  transition: all 0.2s linear;
+}
+
+.button__arrow {
+  width: 7px;
+  height: 12px;
+  margin-left: 10px;
+  fill: #ffffff;
+}
+
+.button:hover {
+  background-color: $color-accent-hover;
+}
+
+@media (min-width: $tablet) {
+  .button {
+    padding: 10px 30px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .button {
+    padding: 15px 30px;
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,27 @@
+.page-title {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+}
+
+.page-title--inner {
+  text-transform: capitalize;
+}
+
+@media (min-width: $tablet) {
+  .page-title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .page-title {
+    font-size: 35px;
+  }
+}

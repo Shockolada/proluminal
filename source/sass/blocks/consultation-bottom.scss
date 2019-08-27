@@ -1,0 +1,37 @@
+.consultation-bottom {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  z-index: 3;
+  transform: translateX(-50%);
+  width: 100vw;
+  min-height: 40px;
+  padding: 10px 0;
+  // vertical-align: middle;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background-color: rgba(160, 148, 90, 0.8);
+
+  transition: background-color 0.2s linear;
+}
+
+.consultation-bottom__arrow {
+  margin-left: 5px;
+  fill: #ffffff;
+}
+
+.consultation-bottom:hover {
+  background-color: $color-accent;
+}
+
+@media (min-width: $tablet) {
+  .consultation-bottom {
+    font-size: 18px;
+  }
+}

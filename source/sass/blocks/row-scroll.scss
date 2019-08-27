@@ -1,0 +1,19 @@
+.row-scroll {
+  padding-bottom: 30px;
+  margin-bottom: -30px;
+
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.row-scroll__wrap {
+  overflow: hidden;
+  margin-bottom: -1px;
+  padding-bottom: 1px;
+}
+
+@media (min-width: $desktopXS) {
+  .row-scroll {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,143 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  max-width: 430px;
+  padding: 70px;
+
+  background-color: #ffffff;
+
+  display: none;
+}
+
+.modal__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: $color-accent;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.modal__info {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  color: $color-text;
+}
+
+.modal__link {
+  position: relative;
+  display: block;
+  // display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px;
+  padding-left: 120px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+  background-color: #ffffff;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  color: $color-accent;
+  transition: background-color 0.2s linear;
+}
+
+.modal__link-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  border-right: 1px solid $color-gray;
+}
+
+.modal__link-icon svg {
+  fill: $color-accent;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form-item {
+  width: 100%;
+  max-height: 150px;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 300;
+  color: $color-text;
+  background: #ffffff;
+  border: 1px solid $color-gray;
+
+  resize: none;
+}
+
+.modal__form-item:focus {
+  outline: none;
+  border: 1px solid $color-accent;
+}
+
+
+.modal__form-item::-webkit-input-placeholder {
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 300;
+  color: $color-accent;
+  text-transform: capitalize;
+}
+
+.modal__form-item::-moz-placeholder {
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 300;
+  color: $color-accent;
+  text-transform: capitalize;
+}
+
+/* Firefox 19+ */
+.modal__form-item:-moz-placeholder {
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 300;
+  color: $color-accent;
+  text-transform: capitalize;
+}
+
+/* Firefox 18- */
+.modal__form-item:-ms-input-placeholder {
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 300;
+  color: $color-accent;
+  text-transform: capitalize;
+}
+
+.modal--step1 {
+  padding: 110px 70px;
+
+  background-image: url("../img/modal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal--step1 .modal__info {
+  color: #ffffff;
+}
+
+.modal__link:hover {
+  cursor: pointer;
+  background-color: #efede4;
+}

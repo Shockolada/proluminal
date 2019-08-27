@@ -1,0 +1,19 @@
+@media (min-width: $tablet) {
+  .contact-form__wrap {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    flex-wrap: wrap;
+
+  }
+
+  .contact-form__left {
+    width: 40%;
+  }
+
+  .contact-form__right {
+    width: 57%;
+    height: auto;
+  }
+
+}

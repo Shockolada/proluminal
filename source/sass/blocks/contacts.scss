@@ -1,0 +1,89 @@
+.contacts {
+  @include list-reset;
+}
+
+.contacts li {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contacts__link {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacts__link--bold {
+  font-weight: 700;
+}
+
+.contacts__link:hover {
+  color: $color-accent;
+}
+
+.contacts__icon {
+  display: flex;
+  justify-content: center;
+  width: 55px;
+  fill: $color-accent;
+}
+
+.contacts__icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.contacts__icon--small svg {
+  width: 22px;
+  height: 22px;
+}
+
+@media (min-width: $tablet) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .contacts br {
+    display: none;
+  }
+
+  .contacts li {
+    margin-right: 5px;
+  }
+
+  .contacts__icon {
+    align-items: center;
+    width: 70px;
+    border: 1px solid #535353;
+  }
+
+  .contacts__row {
+    border: 1px solid #535353;
+    margin-left: -1px;
+
+  }
+
+  .contacts__link {
+    padding: 15px 20px;
+  }
+
+  .contacts__link:not(:first-of-type) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 32px;
+      background-color: #535353;
+    }
+
+  }
+}

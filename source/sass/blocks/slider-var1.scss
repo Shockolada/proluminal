@@ -1,0 +1,100 @@
+.slider {
+  @include list-reset;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  margin-bottom: 25px;
+}
+
+.slider__img {
+  width: 100%;
+  position: relative;
+  height: 135px;
+  margin-bottom: 10px;
+}
+
+.slider__img-decor {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  left: 50%;
+  bottom: -21px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  transform: translateX(-50%) rotate(45deg);
+
+  &::after {
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: $color-accent;
+  }
+}
+
+.slider__caption {
+  position: relative;
+  display: block;
+  padding-top: 75px;
+  padding-right: 80px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 100;
+  text-transform: uppercase;
+  background-color: #edeef0;
+  color: $color-text;
+  text-decoration: none;
+}
+
+.slider__arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  background-color: #ffffff;
+}
+
+.slider__arrow svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  fill: $color-text;
+}
+
+.slider__caption:hover {
+  color: $color-accent;
+}
+
+.slider__caption:hover svg {
+  fill: $color-accent;
+}
+
+
+@media (min-width: $tablet) {
+  .slider {
+
+  }
+
+  .slider__img {
+    height: 350px;
+    // margin-bottom: 20px;
+  }
+
+  .slider__caption {
+    width: 50%;
+    right: 0;
+  }
+
+  .slider__arrow {
+
+    right: 30px;
+  }
+}

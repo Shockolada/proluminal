@@ -1,0 +1,31 @@
+{
+	"Start page": {
+		"prefix": "!!",
+		"body": [
+			"<!DOCTYPE html>",
+      "<html lang=\"ro\">",
+      "",
+        "@@include('./blocks/head.html')",
+        "",
+        "<body>",
+        "@@include('./blocks/header/header.html')",
+        "",
+          "<!-- Main Content",
+          "================================================== -->",
+          "<main>",
+            "",
+            "$1",
+            "",
+            "</main> <!-- Main Content End-->",
+            "",
+            "@@include('./blocks/footer/footer.html')",
+            "",
+            "@@include('./blocks/scripts.html')",
+            "",
+        "</body>",
+        "",
+      "</html>"
+		],
+		"description": "Initial Html Markup"
+	}
+}

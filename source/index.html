@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+@@include('./blocks/head.html')
+
+<body>
+  @@include('./blocks/header.html')
+
+  <!-- Main Content
+================================================== -->
+  <main class="page-content container">
+
+    <!-- Intro Section
+  ================================================== -->
+    <section class="intro section">
+      <h2 class="visually-hidden"></h2>
+
+      <div class="slider__wrap">
+        <ul class="slider" id="main-slider">
+          <li class="slider__item"
+            style="background: url(img/slider-top.jpg) no-repeat center; background-size: cover;"></li>
+          <li class="slider__item"
+            style="background: url(img/slider-top.jpg) no-repeat center; background-size: cover;"></li>
+        </ul>
+
+        <div class="slider__caption">
+          <a href="#" class="slider__link" href="#">
+            <p>Designul excepţional nu poate fi invizbil</p>
+            <div class="slider__arrow">
+              <svg width="12" height="21">
+                <use xlink:href="img/sprites/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </a>
+          <span class="slider__decor"></span>
+        </div>
+
+      </div>
+
+      <div class="intro__work work ">
+        <h3 class="work__title">Servicii de design interior</h3>
+        <p class="work__desc">Un proiect de design interior presupune crearea unui proiect personalizat, unic pentru
+          fiecare client în parte. Creează-ţi proiectul care te va reprezenta în totalitate!</p>
+        <a href="services-one.html" class="button work__btn">Detalii
+          <svg class="button__arrow" width="12" height="21">
+            <use xlink:href="img/sprites/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="promo">
+        <div class="promo__offer">
+          <h3 class="promo__title">Promoție</h3>
+          <div class="promo__desc">La comanda unui priect de 100 m<sup>2</sup><br> primiți reducere de 10%</div>
+        </div>
+        <div class="promo__img">
+          <span class="promo__sale sale">-10 %</span>
+          <img src="img/promo.jpg" alt="">
+        </div>
+      </div>
+
+    </section> <!-- Intro Section End-->
+
+    @@include('./blocks/services.html')
+
+    <!-- Projects
+  ================================================== -->
+    <section class="projects section">
+      <h2 class="title">Proiectele noastre</h2>
+      @@include('./blocks/projects.html')
+
+      <a class="button-white projects__btn" href="projects.html">Toate proiectele
+        <svg class="button-white__arrow" width="12" height="21">
+          <use xlink:href="img/sprites/sprite.svg#arrow"></use>
+        </svg>
+      </a>
+
+    </section> <!-- Projects Section End-->
+
+    @@include('./blocks/parthners.html')
+
+  </main> <!-- Main Content End-->
+
+  @@include('./blocks/footer.html')
+
+  @@include('./blocks/consultation-bottom.html')
+
+  @@include('./blocks/scripts.html')
+
+  @@include('./blocks/modal.html')
+
+  @@include('./blocks/overlay.html')
+
+</body>
+
+</html>

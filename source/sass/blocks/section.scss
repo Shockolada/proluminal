@@ -1,0 +1,9 @@
+.section {
+  margin-bottom: 25px;
+}
+
+@media (min-width: $desktopXS) {
+  .section {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+@@include('./blocks/head.html')
+
+<body>
+  @@include('./blocks/header.html')
+
+  <!-- Main Content
+================================================== -->
+  <main class="page-content container">
+
+    <section class="one-service">
+
+      <h1 class="page-title">Design interior apartamente</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html" class="breadcrumbs__link">Home</a></li>
+        <li><a href="services.html" class="breadcrumbs__link">Service</a></li>
+        <li><a class="breadcrumbs__link breadcrumbs__link--active">Design interior apartamente</a></li>
+      </ul>
+
+      <div class="one-service__image" style="background:url(img/service-design.jpg) no-repeat center; background-size: cover;">
+        <div class="one-service__info">
+          <p class="one-service__title">Realizăm proiecte de design interior după orice gust</p>
+          <a href="#" class="consultation-link one-service__consultation">
+              <span class="consultation-link__hover"></span>
+              Solicota consultație gratuita
+              <svg class="consultation-link__arrow" width="12" height="21">
+                <use xlink:href="img/sprites/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+        </div>
+      </div>
+
+      <div class="one-service__description"><p>La demararea oricărui proiect de design interior pentru apartamente studiem cu mare atenţie stilul de viaţă şi gusturile clientului pentru ca în final să putem propune un concept unitar şi reprezentativ. Amenajarea apartamentului trebuie să ţină cont atât de estetică cât şi de funcţionalitate. Abordăm diverse stiluri de design interior: stilul clasic, modern, contemporan, minimalist, hi-tech, pop-art, industrial, art-deco, eclectic, tradiţional.</p> </div>
+
+    </section>
+
+
+      <!-- Projects
+  ================================================== -->
+      <section class="projects projects--inner section">
+        <h2 class="title title--inner">Proiectele tematice</h2>
+        @@include('./blocks/projects.html')
+
+      </section> <!-- Projects Section End-->
+
+  </main> <!-- Main Content End-->
+
+  @@include('./blocks/footer.html')
+
+  @@include('./blocks/scripts.html')
+
+</body>
+
+</html>

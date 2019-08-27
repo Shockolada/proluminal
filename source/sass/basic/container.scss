@@ -1,0 +1,13 @@
+/* CONTAINER */
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@media (min-width: $desktopXS) {
+  .container {
+    padding: 0 15px;
+  }
+}
